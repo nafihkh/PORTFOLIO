@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>NAFIH — Portfolio</title>
+  <meta name="description" content="Nafih's personal portfolio — developer, designer, builder."/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <!-- Scanlines overlay -->
+  <div class="scanlines"></div>
+
+  <!-- Particle canvas -->
+  <canvas id="bg-canvas"></canvas>
+
+  <!-- NAV -->
+  <nav id="nav">
+    <div class="nav-logo">&lt;NAFIH/&gt;</div>
+    <ul class="nav-links">
+      <li><a href="#home">HOME</a></li>
+      <li><a href="#services">SERVICES</a></li>
+      <li><a href="#projects">PROJECTS</a></li>
+      <li><a href="#skills">SKILLS</a></li>
+      <li><a href="#contact">CONTACT</a></li>
+    </ul>
+    <div class="hamburger" id="hamburger">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobile-menu">
+    <ul>
+      <li><a href="#home" class="mob-link">HOME</a></li>
+      <li><a href="#services" class="mob-link">SERVICES</a></li>
+      <li><a href="#projects" class="mob-link">PROJECTS</a></li>
+      <li><a href="#skills" class="mob-link">SKILLS</a></li>
+      <li><a href="#contact" class="mob-link">CONTACT</a></li>
+    </ul>
+  </div>
+
+  <!-- SCOREBOARD -->
+  <div class="scoreboard">
+    <div class="score-label">SCORE</div>
+    <div class="score-value" id="score-val">000000</div>
+    <div class="score-label">LEVEL</div>
+    <div class="score-value">07</div>
+  </div>
+
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <div class="hero-inner">
+      <p class="hero-pre">// PLAYER ONE HAS ENTERED</p>
+      <h1 class="hero-name glitch" data-text="N A F I H">N A F I H</h1>
+      <p class="hero-sub">FULL-STACK DEVELOPER &nbsp;|&nbsp; UI/UX DESIGNER &nbsp;|&nbsp; PROBLEM SOLVER</p>
+      <p class="hero-desc">Crafting digital experiences that <span class="cyan">hit different</span>.<br/>From sleek frontends to powerful backends — I build it all.</p>
+      <div class="hero-btns">
+        <a href="#projects" class="btn-primary">VIEW PROJECTS</a>
+        <a href="#contact" class="btn-outline">CONTACT ME</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><span class="stat-num cyan">3+</span><span class="stat-label">YEARS XP</span></div>
+        <div class="stat-divider">|</div>
+        <div class="stat"><span class="stat-num cyan">20+</span><span class="stat-label">PROJECTS</span></div>
+        <div class="stat-divider">|</div>
+        <div class="stat"><span class="stat-num cyan">∞</span><span class="stat-label">COFFEE</span></div>
+      </div>
+    </div>
+    <div class="scroll-hint">▼ SCROLL DOWN ▼</div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="section">
+    <div class="section-header">
+      <span class="section-tag">// CAPABILITIES</span>
+      <h2 class="section-title">WHAT I DO</h2>
+    </div>
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="card-icon">⚡</div>
+        <h3>FRONTEND DEV</h3>
+        <p>Building blazing-fast, responsive UIs with React, Next.js &amp; modern CSS. Pixel-perfect execution every time.</p>
+      </div>
+      <div class="service-card">
+        <div class="card-icon">🛠️</div>
+        <h3>BACKEND DEV</h3>
+        <p>Scalable REST APIs &amp; server-side logic with Node.js, Express &amp; MongoDB. Secure, fast, production-ready.</p>
+      </div>
+      <div class="service-card">
+        <div class="card-icon">🎨</div>
+        <h3>UI/UX DESIGN</h3>
+        <p>Designing interfaces that users love. Clean layouts, intuitive flows, and visually stunning aesthetics.</p>
+      </div>
+      <div class="service-card">
+        <div class="card-icon">📱</div>
+        <h3>MOBILE DEV</h3>
+        <p>Cross-platform mobile apps with React Native. One codebase, multiple platforms, native performance.</p>
+      </div>
+      <div class="service-card">
+        <div class="card-icon">🗄️</div>
+        <h3>DATABASE</h3>
+        <p>Designing efficient database schemas with MongoDB &amp; SQL. Optimized queries and clean data architecture.</p>
+      </div>
+      <div class="service-card">
+        <div class="card-icon">🔐</div>
+        <h3>AUTH &amp; SECURITY</h3>
+        <p>JWT, OAuth, session management &amp; security best practices baked into every project from day one.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section">
+    <div class="section-header">
+      <span class="section-tag">// SHOWCASE</span>
+      <h2 class="section-title">PROJECTS</h2>
+    </div>
+    <div class="projects-grid">
+      <div class="project-card">
+        <div class="project-top">
+          <span class="proj-tag hot">HOT</span>
+          <div class="proj-links">
+            <a href="#" title="GitHub">⌥</a>
+            <a href="#" title="Live">↗</a>
+          </div>
+        </div>
+        <h3>HIGHLOW</h3>
+        <p>A full-stack e-commerce platform for premium sneakers. Features admin dashboard, brand management, JWT auth &amp; Redux state management.</p>
+        <div class="tech-stack">
+          <span>React</span><span>Node.js</span><span>MongoDB</span><span>Redux</span>
+        </div>
+      </div>
+      <div class="project-card">
+        <div class="project-top">
+          <span class="proj-tag new">NEW</span>
+          <div class="proj-links">
+            <a href="#" title="GitHub">⌥</a>
+            <a href="#" title="Live">↗</a>
+          </div>
+        </div>
+        <h3>JOBSEEK</h3>
+        <p>A smart job-seeking platform connecting candidates with employers. Real-time listings, application tracking &amp; profile management.</p>
+        <div class="tech-stack">
+          <span>React</span><span>Express</span><span>MongoDB</span><span>Tailwind</span>
+        </div>
+      </div>
+      <div class="project-card">
+        <div class="project-top">
+          <span class="proj-tag">BUILT</span>
+          <div class="proj-links">
+            <a href="#" title="GitHub">⌥</a>
+            <a href="#" title="Live">↗</a>
+          </div>
+        </div>
+        <h3>ZAPTRO</h3>
+        <p>Modern e-commerce storefront with dynamic product pages, cart management, order tracking &amp; admin controls.</p>
+        <div class="tech-stack">
+          <span>Next.js</span><span>Node.js</span><span>Stripe</span><span>MongoDB</span>
+        </div>
+      </div>
+      <div class="project-card">
+        <div class="project-top">
+          <span class="proj-tag">BUILT</span>
+          <div class="proj-links">
+            <a href="#" title="GitHub">⌥</a>
+            <a href="#" title="Live">↗</a>
+          </div>
+        </div>
+        <h3>AUTH SYSTEM</h3>
+        <p>Production-ready authentication boilerplate — JWT access/refresh tokens, HttpOnly cookies, rate limiting &amp; role-based access.</p>
+        <div class="tech-stack">
+          <span>Node.js</span><span>Express</span><span>JWT</span><span>MongoDB</span>
+        </div>
+      </div>
+      <div class="project-card">
+        <div class="project-top">
+          <span class="proj-tag">BUILT</span>
+          <div class="proj-links">
+            <a href="#" title="GitHub">⌥</a>
+            <a href="#" title="Live">↗</a>
+          </div>
+        </div>
+        <h3>PORTFOLIO V1</h3>
+        <p>Previous personal portfolio with custom animations, GSAP scroll effects &amp; a clean minimalist design system.</p>
+        <div class="tech-stack">
+          <span>React</span><span>GSAP</span><span>CSS</span><span>Vite</span>
+        </div>
+      </div>
+      <div class="project-card">
+        <div class="project-top">
+          <span class="proj-tag new">NEW</span>
+          <div class="proj-links">
+            <a href="#" title="GitHub">⌥</a>
+            <a href="#" title="Live">↗</a>
+          </div>
+        </div>
+        <h3>CHAT APP</h3>
+        <p>Real-time messaging application with Socket.io, room support, user presence indicators &amp; message history.</p>
+        <div class="tech-stack">
+          <span>React</span><span>Socket.io</span><span>Node.js</span><span>MongoDB</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section">
+    <div class="section-header">
+      <span class="section-tag">// TECH TREE</span>
+      <h2 class="section-title">SKILLS</h2>
+    </div>
+    <div class="skills-layout">
+      <div class="skill-bars">
+        <div class="skill-group-title">FRONTEND</div>
+        <div class="skill-item" data-level="92">
+          <div class="skill-name"><span>React / Next.js</span><span class="skill-pct">92%</span></div>
+          <div class="skill-track"><div class="skill-fill" style="--w:92%"></div></div>
+        </div>
+        <div class="skill-item" data-level="88">
+          <div class="skill-name"><span>JavaScript / TypeScript</span><span class="skill-pct">88%</span></div>
+          <div class="skill-track"><div class="skill-fill" style="--w:88%"></div></div>
+        </div>
+        <div class="skill-item" data-level="85">
+          <div class="skill-name"><span>CSS / Tailwind</span><span class="skill-pct">85%</span></div>
+          <div class="skill-track"><div class="skill-fill" style="--w:85%"></div></div>
+        </div>
+        <div class="skill-group-title" style="margin-top:1.5rem">BACKEND</div>
+        <div class="skill-item" data-level="87">
+          <div class="skill-name"><span>Node.js / Express</span><span class="skill-pct">87%</span></div>
+          <div class="skill-track"><div class="skill-fill" style="--w:87%"></div></div>
+        </div>
+        <div class="skill-item" data-level="80">
+          <div class="skill-name"><span>MongoDB / Mongoose</span><span class="skill-pct">80%</span></div>
+          <div class="skill-track"><div class="skill-fill" style="--w:80%"></div></div>
+        </div>
+        <div class="skill-item" data-level="72">
+          <div class="skill-name"><span>SQL / PostgreSQL</span><span class="skill-pct">72%</span></div>
+          <div class="skill-track"><div class="skill-fill" style="--w:72%"></div></div>
+        </div>
+        <div class="skill-group-title" style="margin-top:1.5rem">TOOLS</div>
+        <div class="skill-item" data-level="90">
+          <div class="skill-name"><span>Git / GitHub</span><span class="skill-pct">90%</span></div>
+          <div class="skill-track"><div class="skill-fill" style="--w:90%"></div></div>
+        </div>
+        <div class="skill-item" data-level="75">
+          <div class="skill-name"><span>Docker / Deployment</span><span class="skill-pct">75%</span></div>
+          <div class="skill-track"><div class="skill-fill" style="--w:75%"></div></div>
+        </div>
+      </div>
+      <div class="achievements">
+        <div class="ach-title">🏆 ACHIEVEMENTS</div>
+        <div class="ach-card unlocked">
+          <span class="ach-icon">🎮</span>
+          <div><div class="ach-name">FULL STACK MASTER</div><div class="ach-desc">Shipped complete full-stack apps</div></div>
+          <span class="ach-badge">UNLOCKED</span>
+        </div>
+        <div class="ach-card unlocked">
+          <span class="ach-icon">🚀</span>
+          <div><div class="ach-name">SPEED BUILDER</div><div class="ach-desc">Built &amp; deployed in under 72h</div></div>
+          <span class="ach-badge">UNLOCKED</span>
+        </div>
+        <div class="ach-card unlocked">
+          <span class="ach-icon">🔐</span>
+          <div><div class="ach-name">SECURITY FIRST</div><div class="ach-desc">Implemented JWT + HttpOnly flow</div></div>
+          <span class="ach-badge">UNLOCKED</span>
+        </div>
+        <div class="ach-card unlocked">
+          <span class="ach-icon">🎨</span>
+          <div><div class="ach-name">PIXEL PERFECTIONIST</div><div class="ach-desc">Built stunning custom UIs</div></div>
+          <span class="ach-badge">UNLOCKED</span>
+        </div>
+        <div class="ach-card locked">
+          <span class="ach-icon">☁️</span>
+          <div><div class="ach-name">CLOUD ARCHITECT</div><div class="ach-desc">Deploy to AWS / GCP at scale</div></div>
+          <span class="ach-badge locked-badge">LOCKED</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section">
+    <div class="section-header">
+      <span class="section-tag">// MULTIPLAYER</span>
+      <h2 class="section-title">GAME OVER?</h2>
+      <p class="section-sub">Let's build something legendary together. INSERT COIN TO CONTINUE.</p>
+    </div>
+    <div class="contact-layout">
+      <div class="contact-info">
+        <div class="contact-item">
+          <span class="contact-icon">📧</span>
+          <a href="mailto:nafih@email.com" class="contact-link">nafih@email.com</a>
+        </div>
+        <div class="contact-item">
+          <span class="contact-icon">📍</span>
+          <span>Kerala, India</span>
+        </div>
+        <div class="contact-item">
+          <span class="contact-icon">⚡</span>
+          <span>Available for freelance &amp; full-time</span>
+        </div>
+        <div class="socials">
+          <a href="#" class="social-btn" title="GitHub">GH</a>
+          <a href="#" class="social-btn" title="LinkedIn">LI</a>
+          <a href="#" class="social-btn" title="Twitter">TW</a>
+          <a href="#" class="social-btn" title="Instagram">IG</a>
+        </div>
+      </div>
+      <form class="contact-form" id="contact-form">
+        <div class="form-row">
+          <div class="form-group">
+            <label>NAME</label>
+            <input type="text" placeholder="Player Name" required/>
+          </div>
+          <div class="form-group">
+            <label>EMAIL</label>
+            <input type="email" placeholder="your@email.com" required/>
+          </div>
+        </div>
+        <div class="form-group">
+          <label>SUBJECT</label>
+          <input type="text" placeholder="Mission briefing..." required/>
+        </div>
+        <div class="form-group">
+          <label>MESSAGE</label>
+          <textarea rows="5" placeholder="Describe your quest..." required></textarea>
+        </div>
+        <button type="submit" class="btn-primary" id="send-btn">SEND MESSAGE ▶</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-logo">&lt;NAFIH/&gt;</div>
+      <p class="footer-text">© 2026 NAFIH — ALL RIGHTS RESERVED</p>
+      <p class="footer-sub">Built with ❤️ &amp; way too much coffee</p>
+    </div>
+  </footer>
+
+  <!-- TERMINAL -->
+  <div class="terminal-toggle" id="term-toggle" title="Open Terminal">_</div>
+  <div class="terminal" id="terminal">
+    <div class="term-header">
+      <span>nafih@portfolio:~$</span>
+      <button id="term-close">✕</button>
+    </div>
+    <div class="term-output" id="term-output"></div>
+    <div class="term-input-row">
+      <span class="term-prompt">❯</span>
+      <input class="term-input" id="term-input" type="text" placeholder="type 'help'..."/>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
